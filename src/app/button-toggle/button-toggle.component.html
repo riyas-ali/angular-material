@@ -1,0 +1,42 @@
+<div class="p-8">
+    <button mat-button routerLink="/">Home</button>
+    <hr class="my-4">
+    <mat-button-toggle #toggleBtn disableRipple>Toggle</mat-button-toggle>
+    {{toggleBtn.checked}}
+    <mat-button-toggle #toggleBtn2 disabled>Toggle</mat-button-toggle>
+    {{toggleBtn2.checked}}
+    <mat-button-toggle #toggleBtn3 checked>Toggle</mat-button-toggle>
+    {{toggleBtn3.checked}}
+    <mat-button-toggle #toggleBtn4 checked>Toggle</mat-button-toggle>
+    {{toggleBtn4.checked}}
+
+    <hr class="my-2">
+
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple vertical="false">
+        <mat-button-toggle value="angular">
+            Angular
+        </mat-button-toggle>
+        <mat-button-toggle value="react">
+            React
+        </mat-button-toggle>
+        <mat-button-toggle value="vue">
+            Vue
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+
+    <hr class="my-2">
+
+    <mat-button-toggle-group #toggleGroup1="matButtonToggleGroup" vertical="true">
+        <mat-button-toggle value="angular">
+            Angular
+        </mat-button-toggle>
+        <mat-button-toggle value="react">
+            React
+        </mat-button-toggle>
+        <mat-button-toggle value="vue">
+            Vue
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup1.value}}
+</div>

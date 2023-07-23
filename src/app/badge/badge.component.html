@@ -1,0 +1,15 @@
+<div class="p-8">
+    <button mat-icon-button routerLink="/" class="mx-2"><mat-icon class="mat-18"><span
+                class="material-symbols-outlined">home</span></mat-icon></button>
+    <hr class="my-4">
+
+    <span [matBadge]="notifications" [matBadgeHidden]="notifications == 0" matBadgeSize='small'
+        class="mb-7 block w-fit">Notifications</span>
+    <span matBadge="5" matBadgeSize='medium' matBadgeColor="warn" matBadgeOverlap="false"
+        class="mb-7 block w-fit">Notifications</span>
+    <span matBadge="5" matBadgeSize='large' class="mb-7 block w-fit">Notifications</span>
+
+    <span matBadge="5" matBadgePosition="below after" class="mb-7 block w-fit">Notifications</span>
+    <span matBadge="5" matBadgePosition="below before" class="mb-7 block w-fit">Notifications</span>
+    <span matBadge="5" matBadgePosition="above after" class="mb-7 block w-fit">Notifications</span>
+</div>
